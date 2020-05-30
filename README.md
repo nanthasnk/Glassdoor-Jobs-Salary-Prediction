@@ -52,6 +52,12 @@ After scraping the data from glassdoor.com, I needed to clean it up so that it w
 # EDA
 Visually analysed the distributions of the data and the value counts for the various numerical and categorical variables. Below are a few highlights.
 
+![Heat Map](HeatMap.png "HeatMap")
+
+![Skills](skills.png "Skills Count")
+
+![Statewise Average Salary](statewise.PNG "Statewise Salary") ![Seniority wise Average Salary](Seniority.PNG "Seniority wise salary")
+
 # Model Building
 Built a dataframe for our model with relevant columns.
 
