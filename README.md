@@ -56,11 +56,13 @@ After scraping the data from glassdoor.com, I needed to clean it up so that it w
 # EDA
 Visually analysed the distributions of the data and the value counts for the various numerical and categorical variables. Below are a few highlights.
 
-![Heat Map](HeatMap.png "HeatMap")
+![Heat Map](/Images/HeatMap.png "HeatMap")
 
-![Skills](skills.png "Skills Count")
+![Skills](/Images/skills.png "Skills Count")
 
-![Statewise Average Salary](statewise.PNG "Statewise Salary") ![Seniority wise Average Salary](Seniority.PNG "Seniority wise salary")
+![Skills1](/Images/skills1.png "Skills Count")
+
+![Statewise Average Salary](/Images/statewise.PNG "Statewise Salary") ![Seniority wise Average Salary](/Images/Seniority.PNG "Seniority wise salary")
 
 # Model Building
 Built a dataframe for our model with relevant columns.
@@ -72,9 +74,11 @@ Performed Regression analysis using Linear Regression, Lasso Regression and Rand
   -**Lasso Regression**- As there was sparsity associated with categorical data, these models match well
   -**Random Forest**- Again, with the sparsity associated with the data, this model was chosen
   
- # Model Performance
- - **Random Forest**: MAE = 24.23
- - **Linear Regession**: MAE = 25.75
+ # Model Performance Comparison
+ - **Linear Regession**: MAE ~ 26K
+ - **Lasso Regession**: MAE ~ 25K
+ - **Random Forest**: MAE ~ 23K
+ - **After HyperParameter Tuning Random Forest**: MAE ~ 22K
  
  # Productionization
  In this step, Flask API endpoint was built and hosted on a local webserver. The API endpoint takes a request with a list of values from a job listing and returns an estimated salary.
