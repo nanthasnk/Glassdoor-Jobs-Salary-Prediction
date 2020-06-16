@@ -1,12 +1,12 @@
 # Data Science Jobs Salary Prediction: Project Overview
-- Created a tool that estimates data science salaries in USA to help data scientists negotiate their income when they get a job.
-- The aim of the project is to predict Data Scientist salary based on job descriptions
+- Created a tool that estimates data science salaries in the USA to help data scientists negotiate their income when they get a job.
+- The project aims to predict Data Scientist salary based on job descriptions
 - Scraped over 1000 job descriptions from glassdoor using python and selenium
-- Cleaned the data to extract salary, job_roles, skills required (python, r, aws, etc.) and other features
-- Explored the data to understand relationship of various features with the target (salary)
+- Cleaned the data to extract salary, job_roles, skills required (Python, R, SQL, etc.) and other features
+- Explored the data to understand the relationship of various features with the target (salary)
 - Applied mean-encoding to categorical features
 - Optimized Linear, Lasso, and Random Forest Regressors using GridsearchCV to obtain the best model
-- Built a client facing API using flask
+- Built a client-facing API using flask
 
 # Resources Used
 **Python Version:** 3.7 </br>
@@ -16,7 +16,7 @@
 **Flask Productionization**:<https://towardsdatascience.com/productionize-a-machine-learning-model-with-flask-and-heroku-8201260503d2>
 
 # Web Scraping
-Tweaked the web Scraper to scrape 1000 job postings from glassdoor.com. WIh Each job we got the following:
+Tweaked the web Scraper to scrape 1000 job postings from glassdoor.com. Each job we got the following:
 - Job Title
 - Salary Estimate
 - Job Description
@@ -40,10 +40,14 @@ After scraping the data from glassdoor.com, I needed to clean it up so that it w
 - Made a new column for Company State
 - Created a new column with a condition of whether the work was at the company headquarters
 - Transformed company founded date into Age of company
-- Created columns for various skills listed in job description
+- Created columns for various skills listed in the job description
   * Python
   * R
   * Excel
+  * SQL
+  * Tableau
+  * PowerBI
+  * Hadoop
   * AWS
   * Spark
 - Created columns for simplified job title and Seniority
@@ -65,18 +69,18 @@ Transformed the categorical variables into dummy variables. In addition, splitte
 
 Performed Regression analysis using Linear Regression, Lasso Regression and Random Forest.
   -**Multiple Linear Regression**- BaseLine for the model
-  -**Lasso Regression**- As there was sparcity associated with categorical data, in my view these models match well
-  -**Random Forest**- Again, with the sparcity associated with the data, this model was chosen
+  -**Lasso Regression**- As there was sparsity associated with categorical data, these models match well
+  -**Random Forest**- Again, with the sparsity associated with the data, this model was chosen
   
  # Model Performance
  - **Random Forest**: MAE = 24.23
  - **Linear Regession**: MAE = 25.75
  
  # Productionization
- In this step, Flask API endpoint was built and hosted on a local webserver. The API endpoint takes a request with list of values from a job listing and returns an estimarted salary.
+ In this step, Flask API endpoint was built and hosted on a local webserver. The API endpoint takes a request with a list of values from a job listing and returns an estimated salary.
  
  # Conclusion
- A end-to-end machine learning project for predicting the Salary for Data Scientist Job was developed starting from collection of data, data cleaning, eda, model building, model deployment.
+ An end-to-end machine learning project for predicting the Salary for Data Scientist Job was developed starting from the collection of data, data cleaning, exploratory data analysis, model building, model deployment.
 
 
  
