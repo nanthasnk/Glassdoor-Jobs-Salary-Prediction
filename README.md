@@ -8,6 +8,10 @@
 - Optimized Linear, Lasso, and Random Forest Regressors using GridsearchCV to obtain the best model
 - Built a web application using Streamlit Web API
 
+# Motivation
+*“You can lay the groundwork now so that when the crisis is over you have opened doors and rekindled relationships.”*<br>
+The coronavirus (COVID-19) outbreak is causing widespread concern and economic hardship for consumers, businesses and communities across the globe. Being able to get a good job right now in the data science industry, with a salary proportionate to the skills they possess is important, and at the same time, much more different compared to more normal time. This Web Application powered by machine learning provides a means to help estimate the salary based on the skills of a person, as well as the company hiring them.
+
 # Resources Used
 **Python Version:** 3.7 </br>
 **Packages Used:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Selenium, Streamlit, Pickle  </br>
@@ -67,7 +71,7 @@ Visually analysed the distributions of the data and the value counts for the var
 # Model Building
 Built a dataframe for our model with relevant columns.
 
-Transformed the categorical variables into dummy variables. In addition, splitted the data in train and test set
+Transformed the categorical variables into dummy variables. In addition, the data is split into train and test set
 
 Performed Regression analysis using Linear Regression, Lasso Regression and Random Forest.
   -**Multiple Linear Regression**- BaseLine for the model
@@ -81,10 +85,10 @@ Performed Regression analysis using Linear Regression, Lasso Regression and Rand
  - **After HyperParameter Tuning Random Forest**: MAE ~ 22K
  
  # Productionization
- In this step, Flask API endpoint was built and hosted on a local webserver. The API endpoint takes a request with a list of values from a job listing and returns an estimated salary.
+ In this step, a web application is built using Streamlit API and hosted on Heroku platform. The web application provides users options to choose values from a job listing and returns an estimated salary.
  
  # Conclusion
- An end-to-end machine learning project for predicting the Salary for Data Scientist Job was developed starting from the collection of data, data cleaning, exploratory data analysis, model building, model deployment.
+ An end-to-end machine learning project for predicting the Salary for Data Scientist Job was developed starting from the collection of data, data cleaning, exploratory data analysis, model building and model deployment.
 
 
  
