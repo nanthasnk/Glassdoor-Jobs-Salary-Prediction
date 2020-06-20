@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run Data_Sciece_Salary_Prediction_App.py
+web: sh setup.sh && streamlit run ds-salary-prediction-app.py
