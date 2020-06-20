@@ -5,7 +5,7 @@ import pandas as pd
 import time
 import time
 
-df = pd.read_csv("EDA.csv")
+df = pd.read_csv("EDA_dp.csv")
 
 # st.write(df.head())
 
