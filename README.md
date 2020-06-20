@@ -1,19 +1,19 @@
 # Data Science Jobs Salary Prediction: Project Overview
-- Created a tool that estimates data science salaries in the USA to help data scientists negotiate their income when they get a job.
+- Created a [Web Application](https://ds-salary-prediction-app.herokuapp.com/) that estimates data science salaries in the USA to help data scientists negotiate their income when they get a job.
 - The project aims to predict Data Scientist salary based on job descriptions
 - Scraped over 1000 job descriptions from glassdoor using python and selenium
 - Cleaned the data to extract salary, job_roles, skills required (Python, R, SQL, etc.) and other features
 - Explored the data to understand the relationship of various features with the target (salary)
 - Applied mean-encoding to categorical features
 - Optimized Linear, Lasso, and Random Forest Regressors using GridsearchCV to obtain the best model
-- Built a client-facing API using flask
+- Built a web application using Streamlit Web API
 
 # Resources Used
 **Python Version:** 3.7 </br>
-**Packages Used:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Selenium, Flask, Json, Pickle  </br>
+**Packages Used:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Selenium, Streamlit, Pickle  </br>
 **Web Framework:** `pip install -r requirements.txt` </br>
 **Scrapper Article:**:https://towardsdatascience.com/selenium-tutorial-scraping-glassdoor-com-in-10-minutes-3d0915c6d905 </br>
-**Flask Productionization**:<https://towardsdatascience.com/productionize-a-machine-learning-model-with-flask-and-heroku-8201260503d2>
+**Streamlit Productionization**:https://towardsdatascience.com/how-to-build-a-data-science-web-app-in-python-61d1bed65020
 
 # Web Scraping
 Tweaked the web Scraper to scrape 1000 job postings from glassdoor.com. Each job we got the following:
