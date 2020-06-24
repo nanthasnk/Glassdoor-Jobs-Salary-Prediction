@@ -79,10 +79,10 @@ Performed Regression analysis using Linear Regression, Lasso Regression and Rand
   -**Random Forest**- Again, with the sparsity associated with the data, this model was chosen
   
  # Model Performance Comparison
- - **Linear Regession**: MAE ~ 26K
- - **Lasso Regession**: MAE ~ 25K
- - **Random Forest**: MAE ~ 23K
- - **After HyperParameter Tuning Random Forest**: MAE ~ 22K
+ - **Linear Regession**: MAE = 25.45
+ - **Lasso Regession**: MAE = 24.20
+ - **Random Forest**: MAE = 23.93
+ - **After HyperParameter Tuning Random Forest**: MAE = 23.08
  
  # Productionization
  In this step, a web application is built using Streamlit API and hosted on Heroku platform. The web application provides users options to choose values from a job listing and returns an estimated salary.
